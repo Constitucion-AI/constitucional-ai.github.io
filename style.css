@@ -1,166 +1,184 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #ecf0f1; /* Soft background color for the body */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ecf0f1;
 }
 
-/* Basic reset for header and nav elements */
 header, nav {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between; /* This will separate the title and the nav */
-    align-items: center; /* This will vertically center align items in the container */
-    padding: 0.5em 1em; /* Add some padding around the items */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
 }
 
 h1 {
-    margin: 0; /* Reset default margin */
-    font-size: 1.5em; /* Adjust font size as needed */
+  margin: 0;
+  font-size: 1.5em;
 }
 
 nav a {
-    text-decoration: none; /* Remove underlines from links */
-    color: #000; /* Set the text color for the link - change as needed */
-    display: flex; /* Use flex to align the icon with the text */
-    align-items: center; /* Center the items vertically */
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
 }
 
 nav a i {
-    margin-right: 0.5em; /* Add some space between the icon and the text */
+  margin-right: 0.5em;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center align main content */
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-section {
-    width: 100%;
-    max-width: 1020px; /* Maximum width for content */
-    margin-bottom: 20px;
-    background: #ffffff; /* White background for content */
-    border-radius: 8px; /* Rounded corners for the sections */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 20px;
-    box-sizing: border-box; /* Include padding and border in the element's width */
-}
-/* Estilo para la sección de WhatsApp */
-.whatsapp-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px; /* Este valor puede ajustarse para modificar el interlineado */
-    padding-bottom: 20px; /* Añade padding en la parte inferior de la sección */
-  }
-  
-  .whatsapp-head {
-    font-size: 28px; /* Ajusta esto según necesites */
-    line-height: 0.1; /* Esto controlará el interlineado del texto */
-    text-align: center;
-    max-width: 600px; /* Esto ayudará a que el texto no sea demasiado ancho */
-    margin-bottom: 20px; /* Espacio antes del botón de WhatsApp, si es necesario */
-  }
-
-  /* Estilo para el texto junto al botón de WhatsApp */
-  .whatsapp-text {
-    font-size: 16px; /* Ajusta esto según necesites */
-    line-height: 0.1; /* Esto controlará el interlineado del texto */
-    text-align: center;
-    max-width: 600px; /* Esto ayudará a que el texto no sea demasiado ancho */
-    margin-bottom: 20px; /* Espacio antes del botón de WhatsApp, si es necesario */
-  }
-  
-  /* Estilo para el botón de WhatsApp */
-  .whatsapp-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Estilo para la imagen dentro del botón de WhatsApp */
-  .whatsapp-button img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-  }
-  
-  /* Efecto de hover para la imagen */
-  .whatsapp-button img:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Asegurándonos de que la imagen se muestre */
-  .whatsapp-button img[src=""] {
-    display: none; /* Oculta la imagen si no tiene fuente */
-  }
-  
-  .whatsapp-button img:not([src=""]) {
-    display: block; /* Asegura que la imagen se muestre si tiene fuente */
-  }
-  
-  /* Media queries para responsividad */
-  @media (max-width: 768px) {
-    .whatsapp-section {
-      padding-bottom: 10px;
-    }
-  
-    .whatsapp-button img {
-      width: 100%; /* Ajusta el tamaño para móviles */
-    }
-  }
-
-
-.description-box {
-    position: relative;
-    /* other styling */
-}
-
-
-
-.intro .whatsapp-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
+section,
 iframe {
-    width: 100%;
-    max-width: 1020px; /* Match the width of other content sections */
-    height: 800px; /* Adequate height for iframe content */
-    border: none; /* Remove border */
-    border-radius: 8px; /* Match the border-radius of other sections */
+  width: 100%;
+  max-width: 1020px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.whatsapp-section,
+.whatsapp-head,
+.whatsapp-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+}
+
+.whatsapp-head {
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.whatsapp-text {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+  padding-bottom: 25px;
+}
+
+.whatsapp-button img:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-button img[src=""] {
+  display: none;
+}
+
+.whatsapp-button img:not([src=""]) {
+  display: block;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #34495e; /* Dark footer matching the header */
-    color: #ffffff;
-    margin-top: auto; /* Ensure footer is at the bottom */
+  text-align: center;
+  padding: 10px;
+  background-color: #34495e;
+  color: #ffffff;
+  margin-top: auto;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
-    header, main, footer {
-        flex-direction: column;
-        align-items: center;
-    }
+  .whatsapp-section {
+    padding-bottom: 10px;
+  }
+  
+  nav a:not(:last-child) {
+    margin-right: 10px;
+  }
 
-    iframe {
-        height: 300px; /* Smaller height for iframe on smaller devices */
-    }
+  iframe {
+    height: 300px;
+  }
 
-    nav a:not(:last-child) {
-        margin-left: 0;
-        margin-right: 10px; /* Space out icons a bit on smaller screens */
-    }
+  header, main, footer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .custom-button-container {
+    text-align: center;
+  }
+  
+  .custom-button {
+    display: block;
+  }
+  
+  .chat-interface iframe {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .custom-button {
+    display: none;
+  }
+  
+  .chat-interface iframe {
+    display: block;
+  }
+  
+  .chat-interface {
+    position: relative;
+  }
+  
+  .chat-interface #iframe-opener {
+    position: absolute;
+    right: 20px;
+    top: 53px;
+    z-index: 10;
+  }
+}
+
+.custom-button {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.iframe-container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .custom-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px; /* smaller padding */
+    font-size: 0.8em; /* smaller font size */
+    transform: translateY(-50%); /* Adjust vertical position to align with the top text */
+  }
 }
