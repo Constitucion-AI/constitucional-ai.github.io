@@ -94,13 +94,6 @@ iframe {
   display: block;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #34495e;
-  color: #ffffff;
-  margin-top: auto;
-}
 
 @media (max-width: 768px) {
   .whatsapp-section {
@@ -181,4 +174,28 @@ footer {
     font-size: 0.8em; /* smaller font size */
     transform: translateY(-50%); /* Adjust vertical position to align with the top text */
   }
+}
+
+footer {
+  background-color: #2c3e50; /* Un color de fondo oscuro que contrasta bien con el texto */
+  color: #ecf0f1; /* Color claro para el texto para asegurar que sea legible */
+  text-align: center; /* Centra el contenido del footer */
+  padding: 20px 0; /* Agrega espacio arriba y abajo del texto */
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Fuente moderna y legible */
+  border-top: 3px solid #3498db; /* Una línea superior para un poco de color y separación del contenido principal */
+}
+
+footer a {
+  color: #3498db; /* Color que haga juego con la línea superior */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  font-weight: bold; /* Hace el texto del enlace más grueso */
+}
+
+footer a:hover {
+  color: #ecf0f1; /* Cambia el color del enlace al pasar el mouse para una mejor interactividad */
+}
+
+p, ul, li {
+  line-height: 1.6; /* Este es un valor de altura de línea comúnmente recomendado para una buena legibilidad */
+  /* Otros estilos que quieras mantener o agregar */
 }
