@@ -1,11 +1,11 @@
 :root {
-  --ucentral-blue: #354093;
-  --ucentral-orange: #f5a04e;
+  --ucentral-blue: #0026fa;
+  --ucentral-orange: #ff5200;
   --ucentral-skyblue: #c4daf1;
-  --ucentral-dark: #2c3e50;
-  --ucentral-light: #ecf0f1;
+  --ucentral-dark: #000000;
+  --ucentral-light: #f2f4ff;
   --ucentral-white: #ffffff;
-  --ucentral-accent: #3498db;
+  --ucentral-accent: #0026fa;
 }
 
 body {
@@ -227,7 +227,7 @@ section, iframe {
 }
 
 .custom-button {
-  background-color: var(--ucentral-dark);
+  background-color: var(--ucentral-orange);
   color: var(--ucentral-white);
   padding: 10px 20px;
   border: none;
