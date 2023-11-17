@@ -79,6 +79,14 @@ header, nav {
   margin-bottom: 1rem; /* Adds some space below the logo */
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .intro .intro-logo {
+    width: 100%; /* On smaller screens, the logo can take up more width */
+    max-height: 150px; /* Limit the height so it doesn't take too much vertical space */
+    margin: 0.5rem auto; /* Adjust the margin to fit smaller screens */
+  }
+}
 
 /* Style for the description paragraph */
 .intro h4 {
@@ -112,6 +120,15 @@ header, nav {
   max-width: 940px; /* Adjust as necessary for line length */
   margin-bottom: 1rem; /* Adds some space below the paragraph */
   text-align: justify;
+}
+
+.about-whatsapp a {
+  color: var(--ucentral-accent);
+  text-decoration: none;
+}
+
+.about-whatsapp a:hover {
+  color: var(--ucentral-orange);
 }
 
 h1 {
