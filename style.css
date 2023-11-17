@@ -47,6 +47,8 @@ header, nav {
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .intro h3 {
@@ -91,6 +93,14 @@ header, nav {
   align-items: center;
   padding: 0.5em 1em;
   background-color: var(--ucentral-blue);
+}
+
+.chat-interface p {
+  font-size: 1rem; /* Adjust as necessary */
+  color: var(--ucentral-dark-text); /* Use a color that's readable on your background */
+  max-width: 940px; /* Adjust as necessary for line length */
+  margin-bottom: 1rem; /* Adds some space below the paragraph */
+  text-align: justify;
 }
 
 h1 {
