@@ -32,6 +32,8 @@ header, nav {
   line-height: 1px;
 }
 
+
+
 .chat-interface h2 {
   display: flex;
   flex-direction: column;
@@ -65,7 +67,6 @@ header, nav {
 }
 
 .intro {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -80,11 +81,21 @@ header, nav {
 
 
 /* Style for the description paragraph */
-.intro p {
-  font-size: 1rem; /* Adjust as necessary */
+.intro h4 {
+  font-size: 2rem; /* Adjust as necessary */
   color: var(--ucentral-dark-text); /* Use a color that's readable on your background */
   max-width: 940px; /* Adjust as necessary for line length */
   margin-bottom: 1rem; /* Adds some space below the paragraph */
+}
+
+.intro p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .container {
@@ -137,6 +148,12 @@ section, iframe {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   box-sizing: border-box;
+}
+
+ul {
+  text-align: justify;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .whatsapp-section,
